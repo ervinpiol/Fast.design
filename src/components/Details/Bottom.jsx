@@ -9,7 +9,7 @@ const Bottom = ({ user }) => (
   <div className="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2">
     <ProfileField
       icon={IconLocation}
-      value={user?.location ?? "San Francisco"}
+      value={user?.location ?? "Not available"}
     />
 
     <ProfileField
@@ -19,13 +19,13 @@ const Bottom = ({ user }) => (
 
     <ProfileField
       icon={IconWebsite}
-      value={user?.html_url ?? "https://github.blog"}
+      value={user?.html_url ?? "Not available"}
       isLink
     />
 
     <ProfileField
       icon={IconCompany}
-      value={`@${user?.twitter_username ?? "github"}`}
+      value={`${user?.twitter_username ?? "Not Available"}`}
     />
   </div>
 );
@@ -38,7 +38,7 @@ const ProfileField = ({ icon, value, isLink }) => (
         {value}
       </a>
     ) : (
-      <p className="w-full break-words">{value}</p>
+      <p className="w-full break-words"> {value}</p>
     )}
   </div>
 );
