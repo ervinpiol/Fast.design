@@ -1,3 +1,6 @@
+<a href="https://ervin-github-user-finder.netlify.app/" target="_blank">Live Site</a>
+<br />
+<br />
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
